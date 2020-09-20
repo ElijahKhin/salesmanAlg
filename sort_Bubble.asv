@@ -1,0 +1,11 @@
+function bubbleSort
+k = [4 102 5 40 28 23 23 23 43 102 32 2 432 1 9000 34];
+h = 0;
+for j = 1: length(k)
+    for i = 1: length(k)-1
+        if k(i) > k(i+1)
+            k(i:i+1) = [k(i+1) k(i)];
+        end
+    end
+end
+disp(k)
